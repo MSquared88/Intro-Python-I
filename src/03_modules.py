@@ -13,7 +13,7 @@ import sys
 
 
 for i in sys.argv: 
-    print(f'{i}  *this is a line*') #also learned how to string interpolate :D
+    print(i) 
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE
