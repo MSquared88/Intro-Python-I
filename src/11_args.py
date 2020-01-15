@@ -37,12 +37,8 @@ print(f2(*a))    # Should print 22
 
 # YOUR CODE HERE
 
-def f3(arg1, arg2 = None):
-    if arg2 == None:
-        return arg1 + 1
-    else:
-        return arg1 + arg2
-
+def f3(arg1, arg2 = 1):
+    return arg1 + arg2
 
 print(f3(1, 2))  # Should print 3
 print(f3(8))     # Should print 9
