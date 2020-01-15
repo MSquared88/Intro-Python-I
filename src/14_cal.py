@@ -22,3 +22,22 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+# get the command line arguments minus the file path
+cli_args = sys.argv[1:]
+
+#get todays infor and set it to a  var
+now = datetime.now()
+
+# make a function that outputs the proper response 
+# depending on how many args ar sent
+
+def get_month(m = now.month, y = now.year, *args):
+
+    # if more than 2 arguments ar given an error text will appear
+    if  args:
+        print("month and year are the only arguments needed")
+    else:
+        print(calendar.month(int(y), int(m)))
+
+get_month(*cli_args)
